@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "myfont";
+  src: url('../fonts/myfont.eot');
+  src: url('../fonts/myfont.eot?#iefix') format('eot'),
+    url('../fonts/myfont.woff') format('woff'),
+    url('../fonts/myfont.ttf') format('truetype'),
+    url('../fonts/myfont.svg#myfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.s:before {
+  display: inline-block;
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.s-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.s-2x { font-size: 2em; }
+.s-3x { font-size: 3em; }
+.s-4x { font-size: 4em; }
+.s-5x { font-size: 5em; }
+.s-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.s-Picto_Chevron:before { content: "\E001" }
+.s-Picto_Domain:before { content: "\E002" }
+.s-Picto_GitHub:before { content: "\E003" }
+.s-Picto_Iaas:before { content: "\E004" }
+.s-Picto_Login_ferme:before { content: "\E005" }
+.s-Picto_Login_ouvert:before { content: "\E006" }
+.s-Picto_Logo:before { content: "\E007" }
+.s-Picto_Maison:before { content: "\E008" }
+.s-Picto_Paas:before { content: "\E009" }
+.s-Picto_Security:before { content: "\E00A" }
+.s-Picto_Twitter:before { content: "\E00B" }
+.s-Picto_blog:before { content: "\E00C" }
+.s-Picto_fleche_home:before { content: "\E00D" }
+.s-Picto_support:before { content: "\E00E" }
+.s-cross:before { content: "\E00F" }
+.s-plus:before { content: "\E010" }
