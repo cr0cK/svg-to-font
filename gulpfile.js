@@ -11,8 +11,6 @@ gulp.task('svgToFont', function () {
       normalize: true
     }))
     .on('codepoints', function (codepoints) {
-      console.log(codepoints);
-
       gulp.src('templates/myfont.css')
         .pipe(consolidate('lodash', {
           glyphs: codepoints,
