@@ -1,4 +1,13 @@
-.icon {
+.icon-base {
+  font-size: 4em;
+}
+
+.icon-cross {
+  font-size: 1em;
   color: red;
-  font-size: 2em;
+}
+
+.icon-plus {
+  font-size: 1.5em;
+  color: lime;
 }
