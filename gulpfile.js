@@ -6,7 +6,10 @@ var consolidate = require('gulp-consolidate');
 
 gulp.task('svgToFont', function () {
   gulp.src(['assets/icons/*.svg'])
-    .pipe(iconfont({fontName: 'myfont'}))
+    .pipe(iconfont({
+      fontName: 'myfont',
+      normalize: true
+    }))
     .on('codepoints', function (codepoints) {
       console.log(codepoints);
 
@@ -15,7 +18,7 @@ gulp.task('svgToFont', function () {
           glyphs: codepoints,
           fontName: 'myfont',
           fontPath: '../fonts/',
-          className: 's'
+          className: 'icon'
         }))
         .pipe(gulp.dest('www/css/'));
     })
